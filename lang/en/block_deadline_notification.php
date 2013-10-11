@@ -10,6 +10,8 @@ $string['view']= "Enter the FB mail address ";
 $string['view1']= "Enter the address here";
 $string['already_subscribed'] = "You have already subscribed";
 $string['Enter_ID'] = "Enter a valid address please";
+$string['unsubscribed'] = "You have unsubscribed";
+$string['subscribed'] = "You have subscribed";
 
 
 ?>

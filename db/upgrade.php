@@ -42,7 +42,7 @@ function xmldb_block_deadline_notification_upgrade($oldversion) {
     
     $dbman = $DB->get_manager(); 
     
-    if ($oldversion < 2012061701) {
+    if ($oldversion <  2012061703) {
 
         
         // Define field id to be added to deadline_notification_subs
@@ -71,7 +71,7 @@ function xmldb_block_deadline_notification_upgrade($oldversion) {
             $dbman->add_field($table, $field);
         }
         // Another save point reached
-        upgrade_block_savepoint(true, 2012061701, 'deadline_notification');
+        upgrade_block_savepoint(true, 2012061703, 'deadline_notification');
     }
 
     return true;
